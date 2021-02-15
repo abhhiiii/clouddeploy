@@ -1,7 +1,7 @@
 steps:
 - name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy","--version=test"]
+  args: ["app", "deploy","--version=test","app.yaml"]
   timeout: "1600s"
 - name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy","--version=test1"]
+  args: ["app", "deploy","--version=test1","app1.yaml"]
   timeout: "1600s"
