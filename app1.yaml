@@ -16,5 +16,5 @@ runtime: nodejs14
 env: standard
 
 env_variables:
-  name: "version 1"
+  name: "version 2"
 # [END gae_quickstart_yaml]
