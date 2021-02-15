@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-env_name=process.env.name2
+const env_name=process.env.name || "def";
 app.get('/', (req, res) => {
   const name = process.env.NAME || 'automatically';
   res.send(`i have updated ${name}! ${env_name}`);
