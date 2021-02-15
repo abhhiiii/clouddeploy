@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  const name = process.env.NAME || 'World';
-  res.send(`Hello ${name}!`);
+  const name = process.env.NAME || 'automatically';
+  res.send(`i have updated ${name}!`);
 });
 
 const port = process.env.PORT || 8080;
