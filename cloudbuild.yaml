@@ -1,9 +1,9 @@
 steps:
 - name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy","app.yaml","--version=test"]
+  args: ["app", "deploy","app.yaml","--version=${_VER_1}"]
   timeout: "1600s"
 - name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy","app1.yaml","--version=test1"]
+  args: ["app", "deploy","app1.yaml","--version=${_VER_2}"]
   timeout: "1600s"
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app","services","set-traffic","--splits","test=0.5,test1=0.5","--split-by","random"]
